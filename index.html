@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Busca de CEP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Busca de CEP</h1>
+    </header>
+    <main>
+        <form method="get" action="javascript:void(0);">
+            <label for="cep">CEP:</label>
+            <input name="cep" type="text" id="cep" maxlength="9" placeholder="Digite o CEP" onblur="buscaRuaPorCep()" />
+
+            <label for="rua">Rua:</label>
+            <input name="rua" type="text" id="rua" placeholder="Digite o nome da rua" onblur="buscaCEPPorRua();" />
+        </form>
+
+        <h3>Resultados:</h3>
+        <div class="result">
+            <p><strong>CEP:</strong> <span id="cepResultado"></span></p>
+            <p><strong>Rua:</strong> <span id="ruaResultado"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairroResultado"></span></p>
+            <p><strong>Cidade:</strong> <span id="cidadeResultado"></span></p>
+            <p><strong>Estado:</strong> <span id="ufResultado"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Busca de CEP</p>
+    </footer>
+</body>
+</html>
